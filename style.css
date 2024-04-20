@@ -132,3 +132,77 @@ aside img{
 .hidden{
     display: none;
 }
+.relative{
+    position: relative !important;
+}
+
+#navButton{
+    display: none;
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 10px;
+    }
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+    header img{
+        height: 60%;
+    }
+    nav{
+        display: none;
+    }
+    #navButton{
+        filter: brightness(0%);
+        display: block;
+        height: 30%;
+        cursor: pointer;
+    }
+    .nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 5rem;
+        background-color: #036635;
+        width: 100vw;
+        height: 100vh;
+    }
+    .nav a{
+        color: white;
+        font-size: 3rem;
+        padding: 2rem 0;
+    }
+    main{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        height: 100%;
+    }
+
+    #container{
+        padding: 0;
+        width: 100%;
+    }
+    #container h1{
+        margin: 0;
+    }
+    #container p{
+        font-size: 1.2rem;
+    }
+    #container2{
+        width: 100%;
+        height: 45%;
+    }
+    #contain-img{
+        padding-left: 8rem;
+    }
+    #products{
+        bottom: 0;
+    }
+}
