@@ -12,7 +12,7 @@ function changeProducts(img) {
 
 document.getElementById("navButton").addEventListener("click", () => {
     let aside = document.getElementById("products");
-    let nav = document.getElementsByTagName("nav");
-    nav[0].classList.toggle("nav");
+    let nav = document.querySelector("nav");
     aside.classList.toggle("relative");
+    nav.classList.toggle("nav");
 });
