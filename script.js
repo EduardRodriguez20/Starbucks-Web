@@ -11,6 +11,12 @@ function changeProducts(img) {
 }
 
 document.getElementById("navButton").addEventListener("click", () => {
+    let button = document.getElementById("navButton");
+    if (button.getAttribute("src") === "img/menu.png") {
+        button.setAttribute("src", "img/close.png");
+    }else{
+        button.setAttribute("src", "img/menu.png");
+    }
     let aside = document.getElementById("products");
     let nav = document.querySelector("nav");
     aside.classList.toggle("relative");
