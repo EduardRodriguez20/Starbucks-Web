@@ -12,31 +12,47 @@
         <img src="img/logo.png" alt="">
         <nav>
             <a href="">Inicio</a>
-            <a href="">Menu</a>
-            <a href="">Novedades</a>
-            <a href="">Contacto</a>
+            <a href="https://www.starbucks.com.co/menu" target="_blank">Menu</a>
+            <a href="https://www.starbucks.com.co/seccion/novedades" target="_blank">Novedades</a>
+            <a href="https://www.starbucks.com.co/stores" target="_blank">Contacto</a>
         </nav>
     </header>
     <main>
         <div id="container">
-            <h1>Starbucks</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi optio atque perspiciatis quos qui, dolor quibusdam adipisci nisi quas in dolorem ratione tenetur perferendis suscipit repellendus at aut esse laboriosam.</p>
+            <h1 class="contain">Starbucks</h1>
+            <p class="contain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi optio atque perspiciatis quos qui, dolor quibusdam adipisci nisi quas in dolorem ratione tenetur perferendis suscipit repellendus at aut esse laboriosam.</p>
+            <h1 class="1 productsTitle contain hidden">Green Tea Frappuchino</h1>
+            <p class="1 contain hidden">Sumérgete en una ola de frescura con nuestro Green Tea Frappuccino. Esta bebida combina la suavidad del té verde con la cremosidad de la leche, todo rematado con una generosa capa de crema batida. Cada sorbo te transportará a un jardín japonés, donde la tranquilidad se mezcla con la energía revitalizante. Refrescante y vigorizante, es el acompañamiento perfecto para tus días de verano.</p>
+            <h1 class="2 productsTitle contain hidden">Sakura Blossom Cream Frappuchino</h1>
+            <p class="2 contain hidden">Celebra la llegada de la primavera con nuestro exquisito Sakura Blossom Cream Frappuccino. Inspirado en la belleza efímera de las flores de cerezo en plena floración, esta bebida captura la esencia de la temporada en cada sorbo. Disfruta de la suavidad floral del sakura, realzada por la cremosidad de la leche y coronada con una cascada de pétalos de sakura comestibles. Sumérgete en un remolino de sabor delicado y dulce, mientras te transporta a un idílico paisaje primaveral.</p>
+            <h1 class="3 productsTitle contain hidden">Frappuchino Unicornio</h1>
+            <p class="3 contain hidden">¡Deja que tu imaginación vuele con nuestro mágico Frappuccino Unicornio! Esta colorida y extravagante creación es una explosión de sabores y colores que despiertan los sentidos. Con una mezcla única de frutas tropicales, crema batida rosa y un toque de purpurina comestible, cada sorbo es una aventura en el mundo de los sueños. Déjate llevar por la magia y la fantasía mientras te sumerges en esta experiencia única y deliciosa. ¡Prepárate para brillar con cada sorbo!</p>
         </div>
         <div id="container2">
             <div id="contain-img">
-                <img src="img/img1.png" alt="">
+                <img src="img/cover.png" alt="" class="contain">
+                <img src="img/img1.png" alt="" class="1 contain hidden">
+                <img src="img/img2.png" alt="" class="2 contain hidden">
+                <img src="img/img3.png" alt="" class="3 contain hidden">
             </div>
             <aside>
-                <img src="img/facebook.png" alt="">
-                <img src="img/twitter.png" alt="">
-                <img src="img/instagram.png" alt="">
+                <a href="https://www.facebook.com/StarbucksColombia/?locale=es_LA" target="_blank">
+                    <img src="img/facebook.png" alt="">
+                </a>
+                <a href="https://twitter.com/Starbucks" target="_blank">
+                    <img src="img/twitter.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/starbuckscol/?hl=es" target="_blank">
+                    <img src="img/instagram.png" alt="">
+                </a>
             </aside>
         </div>
     </main>
     <div id="products">
-        <img src="img/thumb1.png" alt="">
-        <img src="img/thumb2.png" alt="">
-        <img src="img/thumb3.png" alt="">
+        <img src="img/thumb1.png" id="1" alt="" onclick="changeProducts(this)">
+        <img src="img/thumb2.png" id="2" alt="" onclick="changeProducts(this)">
+        <img src="img/thumb3.png" id="3" alt="" onclick="changeProducts(this)">
     </div>
 </body>
+<script src="script.js"></script>
 </html>
